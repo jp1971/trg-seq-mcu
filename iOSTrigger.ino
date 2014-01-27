@@ -110,3 +110,80 @@ void triggerD() {
   digitalWrite(6, LOW);
 }
 
+void triggerE() {
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+}
+
+void triggerF() {
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+}
+
+void triggerD() {
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+}
+
+void triggerG() {
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+}
+
+void triggerH() {
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+}
+
+void triggerI() {
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+}
+
+void triggerK() {
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+}
+
+void triggerK() {
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+}
+
+void triggerL() {
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+}
+
+void triggerM() {
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+}
+
+void triggerN() {
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+}
+
+void triggerO() {
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+}
+
+void triggerP() {
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+}

@@ -23,21 +23,169 @@ void loop () {
       Serial.println(rxBuffer[0]);
       if (rxBuffer[0] == 65) {
         triggerA();
-      } 
-      if (rxBuffer[0] == 66) {
+      } else if ( rxBuffer[0] == 66 ) {
         triggerB();
-      }
-      if (rxBuffer[0] == 67) {
+      } else if ( rxBuffer[0] == 67 ) {
         triggerC();
-      }
-      if (rxBuffer[0] == 68) {
+      } else if ( rxBuffer[0] == 68 ) {
         triggerD();
-      }      
+      } else if ( rxBuffer[0] == 69 ) {
+        triggerE();
+      } else if ( rxBuffer[0] == 70 ) {
+        triggerF();
+      } else if ( rxBuffer[0] == 71 ) {
+        triggerG();
+      } else if ( rxBuffer[0] == 72 ) {
+        triggerH();
+      } else if ( rxBuffer[0] == 73 ) {
+        triggerI();
+      } else if ( rxBuffer[0] == 74 ) {
+        triggerJ();
+      } else if ( rxBuffer[0] == 75 ) {
+        triggerK();
+      } else if ( rxBuffer[0] == 76 ) {
+        triggerL();
+      } else if ( rxBuffer[0] == 77 ) {
+        triggerM();
+      } else if ( rxBuffer[0] == 78 ) {
+        triggerN();
+      } else if ( rxBuffer[0] == 79 ) {
+        triggerO();
+      }    
       rxIndex = 0;
     }
   }
 }
 
+//All
+void triggerA() {
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+}
+
+// Triple combinations
+void triggerB() {
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  delay(100);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+}
+
+void triggerC() {
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(6, LOW);
+}
+
+void triggerD() {
+  digitalWrite(3, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(3, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+}
+
+void triggerE() {
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+}
+
+//Double combinations
+void triggerF() {
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  delay(100);
+  digitalWrite(3, LOW);
+  digitalWrite(4, LOW);
+}
+
+void triggerG() {
+  digitalWrite(3, HIGH);
+  digitalWrite(5, HIGH);
+  delay(100);
+  digitalWrite(3, LOW);
+  digitalWrite(5, LOW);
+}
+
+void triggerH() {
+  digitalWrite(3, HIGH);
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(3, LOW);
+  digitalWrite(6, LOW);
+}
+
+void triggerI() {
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  delay(100);
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+}
+
+void triggerJ() {
+  digitalWrite(4, HIGH);
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(4, LOW);
+  digitalWrite(6, LOW);
+}
+
+void triggerK() {
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+}
+
+// Single combinations
+void triggerL() {
+  digitalWrite(3, HIGH);
+  delay(100);
+  digitalWrite(3, LOW);
+}
+
+void triggerM() {
+  digitalWrite(4, HIGH);
+  delay(100);
+  digitalWrite(4, LOW);
+}
+
+void triggerN() {
+  digitalWrite(5, HIGH);
+  delay(100);
+  digitalWrite(5, LOW);
+}
+
+void triggerO() {
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+}
+
+// Saving for now
 //void configWiFly() {
 //  //Send header byte to intialize serial communication
 //  Serial.write("0");
@@ -85,105 +233,3 @@ void loop () {
 //  Serial.println();
 //  delay(200);
 //}
-
-void triggerA() {
-  digitalWrite(3, HIGH);
-  delay(100);
-  digitalWrite(3, LOW);
-}
-
-void triggerB() {
-  digitalWrite(4, HIGH);
-  delay(100);
-  digitalWrite(4, LOW);
-}
-
-void triggerC() {
-  digitalWrite(5, HIGH);
-  delay(100);
-  digitalWrite(5, LOW);
-}
-
-void triggerD() {
-  digitalWrite(6, HIGH);
-  delay(100);
-  digitalWrite(6, LOW);
-}
-
-void triggerE() {
-  digitalWrite(6, HIGH);
-  delay(100);
-  digitalWrite(6, LOW);
-}
-
-void triggerF() {
-  digitalWrite(6, HIGH);
-  delay(100);
-  digitalWrite(6, LOW);
-}
-
-void triggerD() {
-  digitalWrite(6, HIGH);
-  delay(100);
-  digitalWrite(6, LOW);
-}
-
-void triggerG() {
-  digitalWrite(6, HIGH);
-  delay(100);
-  digitalWrite(6, LOW);
-}
-
-void triggerH() {
-  digitalWrite(6, HIGH);
-  delay(100);
-  digitalWrite(6, LOW);
-}
-
-void triggerI() {
-  digitalWrite(6, HIGH);
-  delay(100);
-  digitalWrite(6, LOW);
-}
-
-void triggerK() {
-  digitalWrite(6, HIGH);
-  delay(100);
-  digitalWrite(6, LOW);
-}
-
-void triggerK() {
-  digitalWrite(6, HIGH);
-  delay(100);
-  digitalWrite(6, LOW);
-}
-
-void triggerL() {
-  digitalWrite(6, HIGH);
-  delay(100);
-  digitalWrite(6, LOW);
-}
-
-void triggerM() {
-  digitalWrite(6, HIGH);
-  delay(100);
-  digitalWrite(6, LOW);
-}
-
-void triggerN() {
-  digitalWrite(6, HIGH);
-  delay(100);
-  digitalWrite(6, LOW);
-}
-
-void triggerO() {
-  digitalWrite(6, HIGH);
-  delay(100);
-  digitalWrite(6, LOW);
-}
-
-void triggerP() {
-  digitalWrite(6, HIGH);
-  delay(100);
-  digitalWrite(6, LOW);
-}

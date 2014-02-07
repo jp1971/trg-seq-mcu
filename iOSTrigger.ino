@@ -1,4 +1,9 @@
 //#include "iOSTrigger.h"
+#include <Adafruit_CC3000.h>
+#include <ccspi.h>
+#include <SPI.h>
+#include <string.h>
+#include "utility/debug.h"
 
 #define LENGTH 1
 
@@ -6,13 +11,17 @@ int rxBuffer[128];
 int rxIndex = 0;
 
 void setup() {
-  //Open serial communication and configue WiFly
-  Serial.begin(9600);
-//  configWiFly();
-  pinMode(3, OUTPUT);
-  pinMode(4, OUTPUT);
-  pinMode(5, OUTPUT);
-  pinMode(6, OUTPUT);
+  //Open serial communication
+  Serial.begin( 115200 );
+  
+  // Connect to access point
+  cc3000.connectToAP( WLAN_SSID, WLAN_PASS, WLAN_SECURITY ) );
+
+  //Set analog output pins
+  pinMode( 3, OUTPUT );
+  pinMode( 4, OUTPUT );
+  pinMode( 5, OUTPUT );
+  pinMode( 6, OUTPUT );
 }
 
 void loop () {

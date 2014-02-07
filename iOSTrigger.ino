@@ -16,7 +16,10 @@ void setup() {
   
   // Connect to access point
   cc3000.connectToAP( WLAN_SSID, WLAN_PASS, WLAN_SECURITY ) );
-
+  
+  // Connect to DHCP server
+  cc3000.checkDHCP();
+  
   //Set analog output pins
   pinMode( 3, OUTPUT );
   pinMode( 4, OUTPUT );
